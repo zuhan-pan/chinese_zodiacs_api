@@ -3,17 +3,16 @@ const serverless = require("serverless-http");
 const cors = require("cors"); // Import CORS middleware
 const app = express();
 
-// Allow CORS for all origins
-app.use(cors());
+app.use(cors()); // Enable CORS for all origins (add this before routes)
 
-// Define your routes
+// Define routes
 app.get("/api/hello", (req, res) => {
   res.json({ message: "Hello, World!" });
 });
 
 app.get("/api/zodiac", (req, res) => {
   const year = req.query.year;
-  res.json({ year }); // Example response
+  res.json({ year });
 });
 
 // Export the handler

@@ -1,6 +1,10 @@
 const express = require("express");
+const cors = require("cors"); // Import CORS middleware
 const app = express();
 const port = 3000;
+
+// Enable CORS globally
+app.use(cors());
 
 // Import the zodiac data
 const zodiacData = require("./zodiacData.json");
@@ -24,15 +28,12 @@ app.get("/api/zodiacs/:name", (req, res) => {
 
 // Route to get a zodiac sign by year
 app.get("/api/zodiac", (req, res) => {
-  const year = req.query.year; // Get the 'year' query parameter
-
+  const year = req.query.year;
   if (!year) {
     return res
       .status(400)
       .json({ message: "Please provide a year as a query parameter." });
   }
-
-  // Find the zodiac that includes the specified year
   const zodiac = zodiacData.zodiacs.find((z) => z.years.includes(year));
 
   if (zodiac) {
