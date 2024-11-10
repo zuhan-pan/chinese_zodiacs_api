@@ -66,7 +66,7 @@
       ],
       "traits": ["Gentle", "Compassionate", "Elegant", "Thoughtful"],
       "element": "Wood",
-      "compatibility": ["Sheep", "Dog", "Pig"]
+      "compatibility": ["Goat", "Dog", "Pig"]
     },
     {
       "name": "Dragon",
@@ -117,7 +117,7 @@
       ],
       "traits": ["Energetic", "Independent", "Impatient", "Sociable"],
       "element": "Fire",
-      "compatibility": ["Tiger", "Dog", "Sheep"]
+      "compatibility": ["Tiger", "Dog", "Goat"]
     },
     {
       "name": "Goat",
@@ -202,7 +202,7 @@
       ],
       "traits": ["Generous", "Compassionate", "Diligent", "Warm-hearted"],
       "element": "Water",
-      "compatibility": ["Tiger", "Rabbit", "Sheep"]
+      "compatibility": ["Tiger", "Rabbit", "Goat"]
     }
   ]
 }
