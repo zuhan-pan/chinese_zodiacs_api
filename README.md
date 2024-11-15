@@ -183,6 +183,3 @@ This project is licensed under the ISC License. See the LICENSE file for details
 
 ---
 
-## Contact
-
-For questions or support, feel free to contact us at [your-email@example.com].
